@@ -7,9 +7,7 @@ public class Piece {
 	public Piece(Board board) {
 		this.board = board;
 	}
-	
-	
-	
+
 	protected Board getBoard() {
 		return board;
 	}
