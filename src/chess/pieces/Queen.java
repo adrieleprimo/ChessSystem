@@ -6,7 +6,6 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Queen extends ChessPiece {
-
 	public Queen(Board board, Color color) {
 		super(board, color);
 	}
@@ -36,7 +35,6 @@ public class Queen extends ChessPiece {
 		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
-		
 		
 		//right
 		p.setValues(position.getRow(), position.getColumn()+1);
@@ -78,7 +76,6 @@ public class Queen extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		
 		//south-west
 		p.setValues(position.getRow()+1, position.getColumn()-1);
 		while(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -88,7 +85,6 @@ public class Queen extends ChessPiece {
 		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
-		
 		
 		//south-east
 		p.setValues(position.getRow()+1, position.getColumn()+1);
@@ -106,9 +102,4 @@ public class Queen extends ChessPiece {
 	public String toString() {
 		return "Q";
 	}
-	
-	
-	
-	
-
 }

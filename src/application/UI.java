@@ -12,7 +12,6 @@ import chess.ChessPosition;
 import chess.Color;
 
 public class UI {
-
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
 	public static final String ANSI_RED = "\u001B[31m";
@@ -109,7 +108,7 @@ public class UI {
 		List<ChessPiece> white = captured.stream().filter(x -> x.getColor() == Color.WHITE)
 				.collect(Collectors.toList());
 		List<ChessPiece> black = captured.stream().filter(x -> x.getColor() == Color.BLACK)
-				.collect(Collectors.toList());
+		.collect(Collectors.toList());
 		System.out.println("Captured pieces: ");
 		System.out.print("White: ");
 		System.out.print(ANSI_WHITE);

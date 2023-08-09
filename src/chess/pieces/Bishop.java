@@ -6,7 +6,6 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Bishop extends ChessPiece {
-
 	public Bishop(Board board, Color color) {
 		super(board, color);
 	}
@@ -37,7 +36,6 @@ public class Bishop extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		
 		//south-west
 		p.setValues(position.getRow()+1, position.getColumn()-1);
 		while(getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
@@ -58,7 +56,6 @@ public class Bishop extends ChessPiece {
 		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
-		
 		return mat;
 	}
 
@@ -66,8 +63,4 @@ public class Bishop extends ChessPiece {
 	public String toString() {
 		return "B";
 	}
-	
-	
-	
-	
 }

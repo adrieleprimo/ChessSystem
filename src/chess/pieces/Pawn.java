@@ -53,9 +53,7 @@ public class Pawn extends ChessPiece {
 						mat[right.getRow()-1][right.getColumn()] = true;
 					}
 				}
-			}
-			
-
+			}	
 		}
 		else {
 			p.setValues(position.getRow() + 1, position.getColumn());
@@ -89,8 +87,7 @@ public class Pawn extends ChessPiece {
 						mat[right.getRow()+1][right.getColumn()] = true;
 					}
 				}
-			}
-			
+			}	
 		}
 		return mat;
 	}
@@ -99,5 +96,4 @@ public class Pawn extends ChessPiece {
 	public String toString() {
 		return "P";
 	}
-
 }
